@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2009 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">QLABPro</string>
+	<string name="block_type">Digest</string>
+	<string name="descriptionOfBlock">Description of QBlock </string>
+	<string name="tempInC"> Temperature in &quot;\u2103&quot;</string>
+	<string name="degreeC">&quot;\u2103&quot;</string>
+    <string name="tempWindow"> Temperature Window  (\u2103) </string>
+    
+    <!--  BluetoothChat -->
+    <string name="blockNameSt">Working with . . .</string>
+    <string name="targetSt">Target (\u2103)</string>
+    <string name="rampSt">Ramp (min)</string>
+    <string name="holdSt">Hold (min)</string>
+    <string name="send">Send</string>
+    <string name="startMethod">Start Digestion</string>
+    <string name="stopMethod">Stop Digestion</string>
+    <string name="readMethod">Read Recipe On QBlock</string>
+
+
+    <string name="askStatus">Ask Status</string>
+    <string name="askTestResult">Ask Test Result</string>
+    <string name="not_connected">You are not connected to a Interface</string>
+    <string name="bt_not_enabled_leaving">Bluetooth was not enabled. Leaving QBlock Wireless.</string>
+    <string name="title_connecting">Connecting . . . </string>
+    <string name="title_connected_to">Getting data from <xliff:g id="device_name">%1$s</xliff:g></string>
+    <string name="title_not_connected">not connected ..</string>
+
+    <!--  DeviceListActivity -->
+    <string name="scanning">scanning for Interfaces ...</string>
+    <string name="select_device">select a Interface to connect</string>
+    <string name="none_paired">No Interface have been paired</string>
+    <string name="none_found">No Interface found</string>
+    <string name="title_paired_devices">Paired Interface</string>
+    <string name="title_other_devices">Other Available Interfaces</string>
+    <string name="button_scan">Scan for Interface</string>
+
+    <!-- Options Menu -->
+    <string name="secure_connect">Search A QBlock</string>
+    <string name="insecure_connect">Connect Insecure </string>
+    <string name="discoverable">Make Discoverable</string>
+    <string name="action_settings">SETTINGS</string>   
+    <string name="digest_sample">MicroWave</string>
+	<string name="view_graph">View Graph</string>
+	<string name="recipe">Recipe</string>
+	<string name="view_batch">Records</string>
+	<string name="settings">Settings</string>
+	<string name="calibration">Calibration</string>
+	<string name="s_string">s</string>
+	
+	<!-- Digestion Recipe layout -->
+  	<string name="recipeNameSt">Digestion Recipe :</string>
+    <string name="targetTempSt">Target Temperature (C)</string>
+    <string name="rampTimeSt">Ramp Time (min)</string>
+    <string name="holdTimeSt">Hold Time (min)</string>
+    <string name="step1St">Step - I</string>
+    <string name="step2St">Step - II</string>
+    <string name="step3St">Step - III</string>
+    <string name="step4St">Step - IV</string>
+   	<string name="zero">000</string> 
+   	<string name="sendMethod">Send Recipe To QBlock</string>   
+   	<string name="saveMethod">Save Recipe</string>
+   	<string name="loadMethod">View Recipe</string>
+   
+	<!-- Calibration layout -->
+  	<string name="calibrationTitle">Temperature Calibration</string>
+    <string name="current">Current</string>
+    <string name="external">External Meter</string>
+    <string name="calibrate">Calibrate</string>
+
+
+
+    <!-- master display layout -->
+  	<string name="Access">Access QBlock</string>
+ 
+    <string-array name="vials_array">       
+         <item>Polypropylene</item>        
+         <item>Glass</item>        
+         <item>Teflon</item>        
+         <item>Quartz</item>        
+    </string-array>
+   
+    <string name="have_fun">Have Fun</string>
+    
+    <string name="MicroWave">MicroWave</string>
+   
+   
+   
+   <!-- For CPI Layoutt  
+   
+    <string name="app_name_C">ModBlock Connect</string>
+	<string name="block_type_C">ModBlock</string>
+	<string name="descriptionOfBlock_C">Description of ModBlock</string>
+	 -->  
+    <!--  BluetoothChat
+    <string name="readMethod_C">Read Recipe On ModBlock</string>
+    <string name="bt_not_enabled_leaving_C">Bluetooth was not enabled. Leaving ModBlock Connect.</string>
+ -->
+    <!-- Options Menu 
+    <string name="secure_connect_C">Search A ModBlock</string>
+    <string name="digest_sample_C">ModBlock</string>
+	-->
+	<!-- Digestion Recipe layout 
+   	<string name="sendMethod_C">Send Recipe To ModBlock</string>   
+  -->
+    <!-- master display layout 
+  	<string name="Access_C">Access ModBlock</string> 
+  	
+    -->
+  
+    
+</resources>

@@ -1,0 +1,173 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* .metadata\
+* .metadata\.lock
+* .metadata\.log
+* .metadata\.metadata\
+* .metadata\.metadata\.lock
+* .metadata\.metadata\.log
+* .metadata\.metadata\.plugins\
+* .metadata\.metadata\.plugins\org.eclipse.cdt.core\
+* .metadata\.metadata\.plugins\org.eclipse.cdt.core\.log
+* .metadata\.metadata\.plugins\org.eclipse.cdt.make.core\
+* .metadata\.metadata\.plugins\org.eclipse.cdt.make.core\specs.c
+* .metadata\.metadata\.plugins\org.eclipse.cdt.make.core\specs.cpp
+* .metadata\.metadata\.plugins\org.eclipse.core.resources\
+* .metadata\.metadata\.plugins\org.eclipse.core.resources\.root\
+* .metadata\.metadata\.plugins\org.eclipse.core.resources\.root\.indexes\
+* .metadata\.metadata\.plugins\org.eclipse.core.resources\.root\.indexes\history.version
+* .metadata\.metadata\.plugins\org.eclipse.core.resources\.root\.indexes\properties.index
+* .metadata\.metadata\.plugins\org.eclipse.core.resources\.root\.indexes\properties.version
+* .metadata\.metadata\.plugins\org.eclipse.core.resources\.root\1.tree
+* .metadata\.metadata\.plugins\org.eclipse.core.resources\.safetable\
+* .metadata\.metadata\.plugins\org.eclipse.core.resources\.safetable\org.eclipse.core.resources
+* .metadata\.metadata\.plugins\org.eclipse.core.runtime\
+* .metadata\.metadata\.plugins\org.eclipse.core.runtime\.settings\
+* .metadata\.metadata\.plugins\org.eclipse.core.runtime\.settings\com.android.ide.eclipse.adt.prefs
+* .metadata\.metadata\.plugins\org.eclipse.core.runtime\.settings\org.eclipse.cdt.ui.prefs
+* .metadata\.metadata\.plugins\org.eclipse.core.runtime\.settings\org.eclipse.core.resources.prefs
+* .metadata\.metadata\.plugins\org.eclipse.core.runtime\.settings\org.eclipse.debug.ui.prefs
+* .metadata\.metadata\.plugins\org.eclipse.core.runtime\.settings\org.eclipse.jdt.ui.prefs
+* .metadata\.metadata\.plugins\org.eclipse.core.runtime\.settings\org.eclipse.ui.ide.prefs
+* .metadata\.metadata\.plugins\org.eclipse.core.runtime\.settings\org.eclipse.ui.prefs
+* .metadata\.metadata\.plugins\org.eclipse.jdt.core\
+* .metadata\.metadata\.plugins\org.eclipse.jdt.core\invalidArchivesCache
+* .metadata\.metadata\.plugins\org.eclipse.jdt.core\nonChainingJarsCache
+* .metadata\.metadata\.plugins\org.eclipse.jdt.core\variablesAndContainers.dat
+* .metadata\.metadata\.plugins\org.eclipse.jdt.ui\
+* .metadata\.metadata\.plugins\org.eclipse.jdt.ui\OpenTypeHistory.xml
+* .metadata\.metadata\.plugins\org.eclipse.jdt.ui\QualifiedTypeNameHistory.xml
+* .metadata\.metadata\.plugins\org.eclipse.jdt.ui\dialog_settings.xml
+* .metadata\.metadata\.plugins\org.eclipse.ui.workbench\
+* .metadata\.metadata\.plugins\org.eclipse.ui.workbench\dialog_settings.xml
+* .metadata\.metadata\.plugins\org.eclipse.ui.workbench\workbench.xml
+* .metadata\.metadata\.plugins\org.eclipse.ui.workbench\workingsets.xml
+* .metadata\.metadata\version.ini
+* .metadata\.plugins\
+* .metadata\.plugins\org.eclipse.cdt.core\
+* .metadata\.plugins\org.eclipse.cdt.core\.log
+* .metadata\.plugins\org.eclipse.cdt.make.core\
+* .metadata\.plugins\org.eclipse.cdt.make.core\specs.c
+* .metadata\.plugins\org.eclipse.cdt.make.core\specs.cpp
+* .metadata\.plugins\org.eclipse.core.resources\
+* .metadata\.plugins\org.eclipse.core.resources\.history\
+* .metadata\.plugins\org.eclipse.core.resources\.history\d7\
+* .metadata\.plugins\org.eclipse.core.resources\.history\d7\b04dda096ca0001216f2acb087ed0406
+* .metadata\.plugins\org.eclipse.core.resources\.history\d8\
+* .metadata\.plugins\org.eclipse.core.resources\.history\d8\70b1d9096ca0001216f2acb087ed0406
+* .metadata\.plugins\org.eclipse.core.resources\.projects\
+* .metadata\.plugins\org.eclipse.core.resources\.projects\WQblockBluetooth\
+* .metadata\.plugins\org.eclipse.core.resources\.projects\WQblockBluetooth\.indexes\
+* .metadata\.plugins\org.eclipse.core.resources\.projects\WQblockBluetooth\.indexes\af\
+* .metadata\.plugins\org.eclipse.core.resources\.projects\WQblockBluetooth\.indexes\af\history.index
+* .metadata\.plugins\org.eclipse.core.resources\.projects\WQblockBluetooth\.indexes\properties.index
+* .metadata\.plugins\org.eclipse.core.resources\.projects\WQblockBluetooth\.markers
+* .metadata\.plugins\org.eclipse.core.resources\.projects\WQblockBluetooth\org.eclipse.jdt.core\
+* .metadata\.plugins\org.eclipse.core.resources\.projects\WQblockBluetooth\org.eclipse.jdt.core\state.dat
+* .metadata\.plugins\org.eclipse.core.resources\.root\
+* .metadata\.plugins\org.eclipse.core.resources\.root\.indexes\
+* .metadata\.plugins\org.eclipse.core.resources\.root\.indexes\history.version
+* .metadata\.plugins\org.eclipse.core.resources\.root\.indexes\properties.index
+* .metadata\.plugins\org.eclipse.core.resources\.root\.indexes\properties.version
+* .metadata\.plugins\org.eclipse.core.resources\.root\4.tree
+* .metadata\.plugins\org.eclipse.core.resources\.safetable\
+* .metadata\.plugins\org.eclipse.core.resources\.safetable\org.eclipse.core.resources
+* .metadata\.plugins\org.eclipse.core.runtime\
+* .metadata\.plugins\org.eclipse.core.runtime\.settings\
+* .metadata\.plugins\org.eclipse.core.runtime\.settings\com.android.ide.eclipse.adt.prefs
+* .metadata\.plugins\org.eclipse.core.runtime\.settings\org.eclipse.cdt.ui.prefs
+* .metadata\.plugins\org.eclipse.core.runtime\.settings\org.eclipse.core.resources.prefs
+* .metadata\.plugins\org.eclipse.core.runtime\.settings\org.eclipse.debug.ui.prefs
+* .metadata\.plugins\org.eclipse.core.runtime\.settings\org.eclipse.jdt.ui.prefs
+* .metadata\.plugins\org.eclipse.core.runtime\.settings\org.eclipse.ui.editors.prefs
+* .metadata\.plugins\org.eclipse.core.runtime\.settings\org.eclipse.ui.ide.prefs
+* .metadata\.plugins\org.eclipse.core.runtime\.settings\org.eclipse.ui.prefs
+* .metadata\.plugins\org.eclipse.core.runtime\.settings\org.eclipse.wst.sse.core.prefs
+* .metadata\.plugins\org.eclipse.core.runtime\.settings\org.eclipse.wst.sse.ui.prefs
+* .metadata\.plugins\org.eclipse.jdt.core\
+* .metadata\.plugins\org.eclipse.jdt.core\3804248455.index
+* .metadata\.plugins\org.eclipse.jdt.core\746233451.index
+* .metadata\.plugins\org.eclipse.jdt.core\externalLibsTimeStamps
+* .metadata\.plugins\org.eclipse.jdt.core\invalidArchivesCache
+* .metadata\.plugins\org.eclipse.jdt.core\javaLikeNames.txt
+* .metadata\.plugins\org.eclipse.jdt.core\nonChainingJarsCache
+* .metadata\.plugins\org.eclipse.jdt.core\savedIndexNames.txt
+* .metadata\.plugins\org.eclipse.jdt.core\variablesAndContainers.dat
+* .metadata\.plugins\org.eclipse.jdt.ui\
+* .metadata\.plugins\org.eclipse.jdt.ui\OpenTypeHistory.xml
+* .metadata\.plugins\org.eclipse.jdt.ui\QualifiedTypeNameHistory.xml
+* .metadata\.plugins\org.eclipse.jdt.ui\dialog_settings.xml
+* .metadata\.plugins\org.eclipse.ui.ide\
+* .metadata\.plugins\org.eclipse.ui.ide\dialog_settings.xml
+* .metadata\.plugins\org.eclipse.ui.workbench\
+* .metadata\.plugins\org.eclipse.ui.workbench\dialog_settings.xml
+* .metadata\.plugins\org.eclipse.ui.workbench\workbench.xml
+* .metadata\.plugins\org.eclipse.ui.workbench\workingsets.xml
+* .metadata\.plugins\org.eclipse.wst.internet.cache\
+* .metadata\.plugins\org.eclipse.wst.internet.cache\cache.xml
+* .metadata\.plugins\org.eclipse.wst.sse.ui\
+* .metadata\.plugins\org.eclipse.wst.sse.ui\dialog_settings.xml
+* .metadata\.plugins\org.eclipse.wst.xml.core\
+* .metadata\.plugins\org.eclipse.wst.xml.core\default_catalog.xml
+* .metadata\.plugins\org.eclipse.wst.xml.core\system_catalog.xml
+* .metadata\.plugins\org.eclipse.wst.xml.core\user_catalog.xml
+* .metadata\version.ini
+* WQblockBluetooth.java
+* WQblockBluetooth\
+* WQblockBluetooth\.classpath
+* WQblockBluetooth\.metadata\
+* WQblockBluetooth\.metadata\.lock
+* WQblockBluetooth\.project
+* WQblockBluetooth\.settings\
+* WQblockBluetooth\.settings\org.eclipse.jdt.core.prefs
+* WQblockBluetooth\AndroidManifest.xml
+* WQblockBluetooth\bin\
+* WQblockBluetooth\bin\AndroidManifest.xml
+* WQblockBluetooth\bin\classes\
+* WQblockBluetooth\bin\classes\com\
+* WQblockBluetooth\bin\classes\com\questron\
+* WQblockBluetooth\bin\classes\com\questron\WQblock\
+* WQblockBluetooth\bin\classes\com\questron\WQblock\BuildConfig.class
+* WQblockBluetooth\gen\
+* WQblockBluetooth\gen\com\
+* WQblockBluetooth\gen\com\questron\
+* WQblockBluetooth\gen\com\questron\WQblock\
+* WQblockBluetooth\gen\com\questron\WQblock\BuildConfig.java
+* WQblockBluetooth\project.properties
+* ic_launcher-web.png
+* lib\
+* lib\achartengine-1.0.0.jar
+* lib\achartengine-1.1.0.jar
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => app\src\main\AndroidManifest.xml
+* assets\ => app\src\main\assets
+* lint.xml => app\lint.xml
+* res\ => app\src\main\res\
+* src\ => app\src\main\java\
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

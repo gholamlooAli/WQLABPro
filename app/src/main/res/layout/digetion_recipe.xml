@@ -1,0 +1,702 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2009 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/styleHeadingSub"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="1dp"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/method_name"
+            style="@style/styleHeadingText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Digestion Recipe Name" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp" >
+
+            <TextView
+                style="@style/styleHeadingSub1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Recipe Type : " />
+
+            <RadioGroup
+                android:id="@+id/rgRecipeType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rbTemp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Temp       " />
+
+                <RadioButton
+                    android:id="@+id/rbPower"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Power" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <TableLayout
+            android:id="@+id/TableRecipe1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/rectangle_border"
+            android:paddingBottom="0dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp" >
+
+            <TableRow
+                android:id="@+id/TableRecipeRow11"
+                android:background="@color/Blue1" >
+
+                <TextView
+                    android:id="@+id/stepNo11"
+                    style="@style/styleHeadingSub"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="Step"
+                    android:textColor="@color/Blue7" />
+
+                <TextView
+                    android:id="@+id/targetTemp"
+                    style="@style/styleHeadingSub"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="25dp"
+                    android:text="Target"
+                    android:textColor="@color/Blue7" />
+
+                <TextView
+                    android:id="@+id/rampTime"
+                    style="@style/styleHeadingSub"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="25dp"
+                    android:text="Ramp"
+                    android:textColor="@color/Blue7" />
+
+                <TextView
+                    android:id="@+id/holdTime"
+                    style="@style/styleHeadingSub"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="Hold"
+                    android:textColor="@color/Blue7" />
+            </TableRow>
+
+            <TableRow
+                android:id="@id/TableRecipeRow11"
+                android:background="@color/Blue1" >
+
+                <TextView
+                    android:id="@+id/stepNo"
+                    style="@style/styleHeadingSub"
+                    android:text=""
+                    android:textColor="@color/Blue7"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/targetTemp1"
+                    style="@style/styleHeadingSub"
+                    android:layout_gravity="center"
+                    android:paddingBottom="5dp"
+                    android:text="@string/degreeC"
+                    android:textColor="@color/Blue7"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/rampTime1"
+                    style="@style/styleHeadingSub"
+                    android:layout_gravity="center"
+                    android:text="min"
+                    android:textColor="@color/Blue7"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/holdTime1"
+                    style="@style/styleHeadingSub"
+                    android:layout_gravity="center"
+                    android:text="min"
+                    android:textColor="@color/Blue7"
+                    android:textSize="14dp" />
+            </TableRow>
+
+            <TableRow android:id="@+id/TableRecipeRow2" >
+
+                <TextView
+                    android:id="@+id/step1"
+                    style="@style/styleHeadingSub"
+                    android:layout_gravity="center"
+                    android:text="1"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/targetView1"
+                    style="@style/styleHeadingSubEntry"
+                    android:layout_gravity="center"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:nextFocusDown="@id/rampView1"
+                    android:text="@string/zero" >
+
+                    <requestFocus />
+                </EditText>
+
+                <EditText
+                    android:id="@+id/rampView1"
+                    style="@style/styleHeadingSubEntry"
+                    android:layout_gravity="center"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:nextFocusDown="@id/holdView1"
+                    android:text="@string/zero" />
+
+                <EditText
+                    android:id="@+id/holdView1"
+                    style="@style/styleHeadingSubEntry"
+                    android:layout_gravity="center"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:nextFocusDown="@id/targetView2"
+                    android:text="@string/zero" />
+            </TableRow>
+
+            <TableRow android:id="@+id/TableRecipeRow3" >
+
+                <TextView
+                    android:id="@+id/step2"
+                    style="@style/styleHeadingSub"
+                    android:layout_gravity="center"
+                    android:text="2"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/targetView2"
+                    style="@style/styleHeadingSubEntry"
+                    android:layout_gravity="center"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:nextFocusDown="@id/rampView2"
+                    android:nextFocusRight="@id/rampView2"
+                    android:text="@string/zero"
+                    android:textStyle="bold" >
+                </EditText>
+
+                <EditText
+                    android:id="@+id/rampView2"
+                    style="@style/styleHeadingSubEntry"
+                    android:layout_gravity="center"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:nextFocusDown="@id/holdView2"
+                    android:nextFocusRight="@id/holdView2"
+                    android:text="@string/zero" />
+
+                <EditText
+                    android:id="@+id/holdView2"
+                    style="@style/styleHeadingSubEntry"
+                    android:layout_gravity="center"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:nextFocusDown="@id/targetView3"
+                    android:text="@string/zero" />
+            </TableRow>
+
+            <TableRow android:id="@+id/TableRecipeRow4" >
+
+                <TextView
+                    android:id="@+id/step3"
+                    style="@style/styleHeadingSub"
+                    android:layout_gravity="center"
+                    android:text="3"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/targetView3"
+                    style="@style/styleHeadingSubEntry"
+                    android:layout_gravity="center"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:nextFocusDown="@id/rampView3"
+                    android:nextFocusRight="@id/rampView3"
+                    android:text="@string/zero" />
+
+                <EditText
+                    android:id="@+id/rampView3"
+                    style="@style/styleHeadingSubEntry"
+                    android:layout_gravity="center"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:nextFocusDown="@id/holdView3"
+                    android:nextFocusRight="@id/holdView3"
+                    android:text="@string/zero" />
+
+                <EditText
+                    android:id="@+id/holdView3"
+                    style="@style/styleHeadingSubEntry"
+                    android:layout_gravity="center"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:nextFocusDown="@id/targetView4"
+                    android:nextFocusLeft="@id/targetView4"
+                    android:text="@string/zero" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/TableRecipeRow5"
+                android:paddingBottom="5dp" >
+
+                <TextView
+                    android:id="@+id/step4"
+                    style="@style/styleHeadingSub"
+                    android:layout_gravity="center"
+                    android:text="4"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/targetView4"
+                    style="@style/styleHeadingSubEntry"
+                    android:layout_gravity="center"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:nextFocusDown="@id/rampView4"
+                    android:nextFocusRight="@id/rampView4"
+                    android:text="@string/zero" />
+
+                <EditText
+                    android:id="@+id/rampView4"
+                    style="@style/styleHeadingSubEntry"
+                    android:layout_gravity="center"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:nextFocusDown="@id/holdView4"
+                    android:nextFocusRight="@id/holdView4"
+                    android:text="@string/zero" />
+
+                <EditText
+                    android:id="@+id/holdView4"
+                    style="@style/styleHeadingSubEntry"
+                    android:layout_gravity="center"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:text="@string/zero" />
+            </TableRow>
+        </TableLayout>
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/SpacerBig"> 
+
+            <LinearLayout
+                android:id="@+id/LinearLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/border"
+                android:padding="0dp" >
+
+                <Spinner
+                    android:id="@+id/recipe_list_spinner"
+                    android:layout_width="200dp"
+                    android:layout_height="35dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/TextView1"
+                style="@style/styleRunningText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/LinearLayout1" 
+                android:text="Select Recipe Name" />
+
+            <Button
+                android:id="@+id/btRecipeDelete"
+                style="@style/styleButton"
+                android:layout_toRightOf="@id/LinearLayout1"
+                android:layout_alignBottom="@id/LinearLayout1"
+                android:layout_marginLeft="55dp"
+                android:text="Delete" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/SpacerBig" >
+
+            <Button
+                android:id="@+id/btRecipeSave"
+                style="@style/styleButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="30dp"
+                android:text="Save" />
+
+            <Button
+                android:id="@+id/btRecipeNew"
+                style="@style/styleButton"
+                android:layout_marginLeft="50dp"
+                android:focusableInTouchMode="true"
+                android:text="New" />
+
+            <Button
+                android:id="@+id/btRecipeBack"
+                style="@style/styleButton"
+                android:layout_marginLeft="80dp"
+                android:text=" Back " />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/SpacerSmall" >
+
+            <TextView
+                style="@style/styleHeadingSub1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date of Creation : " />
+
+            <TextView
+                android:id="@+id/recipe_date"
+                style="@style/styleHeadingSub1"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Aug 14, 2012" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/styleHeadingSub1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Name of Creator : " />
+
+            <TextView
+                android:id="@+id/recipe_chemist_name"
+                style="@style/styleHeadingSub1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="enter name of Creator"
+                android:textColorHint="@color/TextHint" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp" >
+
+            <TextView
+                style="@style/styleHeadingSub1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:text="Sample Type :" />
+
+            <EditText
+                android:id="@+id/sample_type_Text"
+                style="@style/styleHeadingSubEntry"
+                android:layout_gravity="bottom"
+                android:hint="enter Sample Type"
+                android:inputType="text|textAutoCorrect|textAutoComplete" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp" >
+
+            <TextView
+                style="@style/styleHeadingSub1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:text="Sample Amount :" />
+
+            <EditText
+                android:id="@+id/sample_amount_Text"
+                style="@style/styleHeadingSubEntry"
+                android:layout_gravity="bottom"
+                android:hint="0000"
+                android:inputType="number"
+                android:maxLength="4" />
+
+            <TextView
+                style="@style/styleHeadingSub1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:text="mg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp" >
+
+            <TextView
+                android:id="@+id/vesseltext"
+                style="@style/styleHeadingSub1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Number of Vessels: " />
+
+            <EditText
+                android:id="@+id/vesselNo1"
+                style="@style/styleHeadingSubEntry"
+                android:inputType="number"
+                android:maxLength="2"
+                android:text="11" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/styleHeadingSub1"
+            android:layout_marginTop="5dp"
+            android:text="Maximum Working Limit" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp" >
+
+            <TextView
+                style="@style/styleHeadingSub1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:text="Temp.(\u2103):" />
+
+            <EditText
+                android:id="@+id/methodTempLim"
+                style="@style/styleHeadingSubEntry"
+                android:inputType="number"
+                android:maxLength="3"
+                android:text="230" />
+
+            <TextView
+                style="@style/styleHeadingSub1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="50dp"
+                android:text="Power(W) :" />
+
+            <EditText
+                android:id="@+id/methodPowerLim"
+                style="@style/styleHeadingSubEntry"
+                android:inputType="number"
+                android:maxLength="4"
+                android:text="1200" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp" >
+
+            <TextView
+                style="@style/styleHeadingSub1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:text="Reagents : " />
+        </LinearLayout>
+
+        <TableLayout
+            android:id="@+id/TableReagent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/rectangle_border"
+            android:paddingBottom="0dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp" >
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/reagentName"
+                    style="@style/styleHeadingSub1"
+                    android:layout_gravity="center"
+                    android:text=" Name" />
+
+                <EditText
+                    android:id="@+id/reagentName1"
+                    style="@style/styleHeadingSubEntry"
+                    android:layout_gravity="center"
+                    android:clickable="false"
+                    android:enabled="true"
+                    android:focusable="false"
+                    android:hint="HNO3" >
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/reagentName2"
+                    style="@style/styleHeadingSubEntry"
+                    android:layout_gravity="center"
+                    android:hint="H2O2" />
+
+                <EditText
+                    android:id="@+id/reagentName3"
+                    style="@style/styleHeadingSubEntry"
+                    android:layout_gravity="center"
+                    android:hint="HCl" />
+
+                <EditText
+                    android:id="@+id/reagentName4"
+                    style="@style/styleHeadingSubEntry"
+                    android:layout_gravity="center"
+                    android:hint="HF" />
+
+                <EditText
+                    android:id="@+id/reagentName5"
+                    style="@style/styleHeadingSubEntry"
+                    android:layout_gravity="center"
+                    android:hint="H2O" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/ml"
+                    style="@style/styleHeadingSub1"
+                    android:layout_gravity="center"
+                    android:text="ml" />
+
+                <EditText
+                    android:id="@+id/reagentml1"
+                    style="@style/styleHeadingSubEntry"
+                    android:layout_gravity="center"
+                    android:hint="0"
+                    android:inputType="numberDecimal"
+                    android:maxLength="4"
+                     >
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/reagentml2"
+                    style="@style/styleHeadingSubEntry"
+                    android:layout_gravity="center"
+                    android:hint="0"
+                    android:inputType="numberDecimal"
+                    android:maxLength="4" />
+
+                <EditText
+                    android:id="@+id/reagentml3"
+                    style="@style/styleHeadingSubEntry"
+                    android:layout_gravity="center"
+                    android:hint="0"
+                    android:inputType="numberDecimal"
+                    android:maxLength="4" />
+
+                <EditText
+                    android:id="@+id/reagentml4"
+                    style="@style/styleHeadingSubEntry"
+                    android:layout_gravity="center"
+                    android:hint="0"
+                    android:inputType="numberDecimal"
+                    android:maxLength="4" />
+
+                <EditText
+                    android:id="@+id/reagentml5"
+                    style="@style/styleHeadingSubEntry"
+                    android:layout_gravity="center"
+                    android:hint="0"
+                    android:inputType="numberDecimal"
+                    android:maxLength="4"
+                     />
+
+            </TableRow>
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp" >
+
+            <TextView
+                style="@style/styleHeadingSub1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/SpacerSmall"
+                android:text="Note:  " />
+
+            <EditText
+                android:id="@+id/recipe_note_Text"
+                style="@style/styleHeadingSubEntry"
+                android:layout_gravity="bottom"
+                android:hint="recipe note"
+                android:imeOptions="actionDone"
+                android:inputType="text|textAutoCorrect|textAutoComplete|textMultiLine" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/reagetns_Text"
+            style="@style/styleHeadingSubEntry"
+            android:layout_gravity="bottom"
+            android:hint="list reagents"
+            android:imeOptions="actionDone"
+            android:inputType="text|textAutoCorrect|textAutoComplete"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+</LinearLayout>

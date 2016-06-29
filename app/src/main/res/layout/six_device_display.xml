@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/leftMargin"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight=".40"
+        android:orientation="vertical" >
+
+			       <TextView
+			           android:id="@+id/twoDevice_block1description"
+			           android:layout_width="wrap_content"
+			           android:layout_height="wrap_content"
+			           android:layout_gravity="top|center_horizontal"
+			           android:text="Block-1 Description"
+			           android:textSize="@dimen/textTitle" />
+
+				 <TextView
+				     android:id="@+id/twoDevice_block1name"
+				     android:layout_width="wrap_content"
+				     android:layout_height="wrap_content"
+				     android:layout_gravity="top|center_horizontal"
+				     android:layout_marginTop="@dimen/SpacerSmall"
+				     android:text="Block-1 name"
+				     android:textSize="@dimen/textHeading" />
+
+			       <TextView
+			           android:id="@+id/twoDevice_block1temp"
+			           android:layout_width="wrap_content"
+			           android:layout_height="wrap_content"
+			           android:layout_gravity="top|center_horizontal"
+			           android:layout_marginTop="50dp"
+			           android:text="20"
+			           android:textSize="100sp" />
+
+			       <LinearLayout
+			           android:layout_width="match_parent"
+			           android:layout_height="wrap_content"
+			           android:paddingLeft="20dp"
+			           android:paddingRight="20dp" >
+
+			           <TextView
+			               android:id="@+id/twoDevice_block1BatchName"
+			               android:layout_width="wrap_content"
+			               android:layout_height="wrap_content"
+			               android:layout_gravity="left"
+			               android:layout_marginTop="@dimen/SpacerSmall"
+			               android:text="six device display"
+			               android:textSize="@dimen/textSubHeading" />
+
+			           <TextView
+			               android:id="@+id/twoDevice_block1BatchDuration"
+			               android:layout_width="wrap_content"
+			               android:layout_height="wrap_content"
+			               android:layout_gravity="right"
+			               android:layout_marginTop="@dimen/SpacerSmall"
+			               android:gravity="right"
+			               android:text="200 min"
+			               android:textSize="@dimen/textSubHeading" />
+			       </LinearLayout>
+
+					<ProgressBar
+					    android:id="@+id/twoDevice_block1progressBar"
+					    style="?android:attr/progressBarStyleHorizontal"
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:layout_gravity="center_horizontal" />
+
+			       <Button
+			           android:id="@+id/twoDevice_button1"
+			           android:layout_width="wrap_content"
+			           android:layout_height="wrap_content"
+			           android:layout_gravity="center_horizontal"
+			           android:layout_marginTop="50dp"
+			           android:text="@string/Access" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="5dp"
+        android:layout_height="match_parent"
+        android:background="@color/lightGray"
+        android:orientation="vertical" >
+
+    </LinearLayout>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_weight=".50"
+       android:orientation="vertical" >
+
+		       <TextView
+		           android:id="@+id/twoDevice_block2description"
+		           android:layout_width="wrap_content"
+		           android:layout_height="wrap_content"
+		           android:layout_gravity="top|center_horizontal"
+		           android:text="Block-2 Description"
+		           android:textSize="@dimen/textTitle" />
+
+				 <TextView
+				     android:id="@+id/twoDdevice_block2name"
+				     android:layout_width="wrap_content"
+				     android:layout_height="wrap_content"
+				     android:layout_gravity="top|center_horizontal"
+				     android:layout_marginTop="@dimen/SpacerSmall"
+				     android:text="Block-2 name"
+				     android:textSize="@dimen/textHeading" />
+
+		       <TextView
+		           android:id="@+id/twoDevice_block2temp"
+		           android:layout_width="wrap_content"
+		           android:layout_height="wrap_content"
+		           android:layout_gravity="top|center_horizontal"
+		           android:layout_marginTop="50dp"
+		           android:text="80"
+		           android:textSize="100sp" />
+		       <LinearLayout
+			           android:layout_width="match_parent"
+			           android:layout_height="wrap_content"
+			           android:paddingLeft="20dp"
+			           android:paddingRight="20dp" >
+
+			           <TextView
+			               android:id="@+id/twoDevice_block2BatchName"
+			               android:layout_width="wrap_content"
+			               android:layout_height="wrap_content"
+			               android:layout_gravity="left"
+			               android:layout_marginTop="@dimen/SpacerSmall"
+			               android:text="Block-2 BatchName and Start Time"
+			               android:textSize="@dimen/textSubHeading" />
+
+			           <TextView
+			               android:id="@+id/twoDevice_block2BatchDuration"
+			               android:layout_width="wrap_content"
+			               android:layout_height="wrap_content"
+			               android:layout_gravity="right"
+			               android:layout_marginTop="@dimen/SpacerSmall"
+			               android:gravity="right"
+			               android:text="200 min"
+			               android:textSize="@dimen/textSubHeading" />
+			       </LinearLayout>
+
+					<ProgressBar
+					    android:id="@+id/twoDevice_block2progressBar"
+					    style="?android:attr/progressBarStyleHorizontal"
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:layout_gravity="center_horizontal" />
+
+			       <Button
+			           android:id="@+id/twoDevice_button2"
+			           android:layout_width="wrap_content"
+			           android:layout_height="wrap_content"
+			           android:layout_gravity="center_horizontal"
+			           android:layout_marginTop="50dp"
+			           android:text="@string/Access" />
+		       
+    </LinearLayout>
+</LinearLayout>

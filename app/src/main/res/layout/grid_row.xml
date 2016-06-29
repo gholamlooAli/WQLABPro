@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2009 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_grrow"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    >
+
+    <TextView
+        android:id="@+id/grrow1"
+        android:layout_height="wrap_content"
+        android:text="text1" 
+        android:layout_marginLeft="2dp"
+        android:textSize="15sp"
+        android:background="@color/MidiumBackground"
+         android:layout_width="52dp"
+        />
+
+    <TextView
+        android:id="@+id/grrow2"
+        android:layout_height="wrap_content"
+        android:text="text2" 
+        android:layout_marginLeft="2dp"
+        android:background="@color/LightGrey"
+        android:textSize="15sp"
+         android:layout_width="38dp"
+        />
+
+    <TextView
+        android:id="@+id/grrow3"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:background="@color/LightGrey"
+        android:textSize="16sp"
+        android:text="te2" />
+
+    <TextView android:id="@+id/grrow4"
+        android:layout_width="28dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:background="@color/LightGrey"
+        android:textSize="16sp"
+        android:text="te2"
+    />
+    <TextView android:id="@+id/grrow5"
+       android:layout_width="28dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:background="@color/LightGrey"
+        android:textSize="16sp"
+        android:text="te2"
+    />
+    <TextView android:id="@+id/grrow6"
+       android:layout_width="28dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:background="@color/LightGrey"
+        android:textSize="16sp"
+        android:text="te2"
+    />
+    <TextView android:id="@+id/grrow7"
+       android:layout_width="28dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:background="@color/LightGrey"
+        android:textSize="16sp"
+       android:text="te2"
+    />
+    <TextView android:id="@+id/grrow8"
+       android:layout_width="28dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:background="@color/LightGrey"
+        android:textSize="16sp"
+       android:text="te2"
+    />
+    <TextView android:id="@+id/grrow9"
+       android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:background="@color/LightGrey"
+        android:textSize="16sp"
+       android:text="te2"
+    />
+    <TextView android:id="@+id/grrow10"
+       android:layout_width="28dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:background="@color/LightGrey"
+        android:textSize="16sp"
+       android:text="te2"
+    />
+    <TextView android:id="@+id/grrow11"
+       android:layout_width="28dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:background="@color/LightGrey"
+        android:textSize="16sp"
+       android:text="te2"
+    />
+    <TextView android:id="@+id/grrow12"
+       android:layout_width="28dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:background="@color/LightGrey"
+        android:textSize="16sp"
+       android:text="te2"
+    />
+    <TextView android:id="@+id/grrow13"
+       android:layout_width="28dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:background="@color/LightGrey"
+        android:textSize="16sp"
+       android:text="te2"
+    />
+    <TextView android:id="@+id/grrow14"
+       android:layout_width="28dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:background="@color/LightGrey"
+        android:textSize="16sp"
+       android:text="te2"
+    />
+    <TextView android:id="@+id/grrow15"
+       android:layout_width="34dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:background="@color/LightGrey"
+        android:textSize="15sp"
+       android:text="te2"
+    />
+    <TextView android:id="@+id/grrow16"
+       android:layout_width="34dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:background="@color/LightGrey"
+        android:textSize="15sp"
+       android:text="te2"
+    />
+    
+</LinearLayout>

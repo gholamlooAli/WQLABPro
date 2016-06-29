@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/leftMargin"
+    android:orientation="vertical"
+    tools:context=".WQblockBluetooth" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditText
+        android:id="@+id/batch_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/SpacerBig"
+        android:ems="10"
+        android:hint="Enter Batch Name"
+        android:imeOptions="actionNext"
+        android:inputType="text"
+        android:textSize="@dimen/textSubHeading" />
+    
+    <EditText
+        android:id="@+id/batch_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/SpacerBig"
+        android:ems="10"
+        android:hint="Enter Note Here"
+        android:imeOptions="actionDone"
+        android:inputType="textAutoCorrect|textAutoComplete"
+        android:textSize="@dimen/textSubHeading" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/leftMargin"
+        android:layout_marginTop="@dimen/SpacerBig"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/settings_Chemist_caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:text="Select Chemist"
+            android:textSize="@dimen/textSubHeading" />
+
+        <Spinner
+            android:id="@+id/settings_chemist_spinner"
+            android:layout_width="235dp"
+            android:layout_height="@dimen/spinnerHeight"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="5dp" />
+
+    </LinearLayout>
+
+	<LinearLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center_horizontal"
+	    android:layout_marginTop="@dimen/SpacerBig" >
+
+    <Button
+        android:id="@+id/btProceedStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="@dimen/leftMargin"
+        android:layout_marginTop="@dimen/SpacerBig"
+        android:focusableInTouchMode="true"
+        android:gravity="fill"
+        android:text="Proceed" />
+
+	<Button
+	    android:id="@+id/btCancelStart"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginBottom="40dp"
+	    android:layout_marginLeft="100dp"
+	    android:layout_marginTop="@dimen/SpacerBig"
+	    android:gravity="fill"
+	    android:text="Cancel" />
+
+	</LinearLayout>
+</LinearLayout>

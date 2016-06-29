@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- dimension for style  -->
+    <dimen name="superHeading">40dp</dimen>
+    <dimen name="leftMargin">15dp</dimen>
+    <dimen name="SpacerSmall">10dp</dimen>
+     <dimen name="SpacerBig">20dp</dimen>
+     <dimen name="textWidthNumeric">80dp</dimen>
+    <dimen name= "textTitle">27sp</dimen>
+    <dimen name= "textHeading">22sp</dimen>  
+    <dimen name= "textSubHeading">20sp</dimen>  
+    <dimen name= "textRunning">16sp</dimen>  
+       <dimen name= "textRunningSmall">10sp</dimen>  
+    <dimen name= "spinnerHeight">40sp</dimen>
+</resources>

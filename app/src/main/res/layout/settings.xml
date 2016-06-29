@@ -1,0 +1,679 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/SpacerBig"
+    android:layout_marginLeft="@dimen/SpacerBig" 
+    android:minWidth="545dp"
+    android:orientation="horizontal"
+    tools:context=".WQblockBluetooth" >
+
+    <FrameLayout
+        android:id="@+id/FrameLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp" >
+<LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp" >
+        <TextView
+            android:id="@+id/sw_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@color/Blue2"
+            android:padding="5dp"
+            android:textColor="@color/Blue8"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/fw_model"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@color/Blue2"
+            android:padding="5dp"
+            android:text=""
+            android:textColor="@color/Blue8"
+            android:textSize="15sp" />
+        </LinearLayout>
+        <FrameLayout
+            android:id="@+id/frameFactorySettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="45dp"
+            android:background="@drawable/rectangle_border"
+            android:padding="10dp"
+            android:visibility="gone" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/TextSystem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="5dp"
+                    android:text="QLABPro Configuration"
+                    android:textSize="@dimen/textRunning" />
+
+                <RadioGroup
+                    android:id="@+id/systemType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/TextSystem"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="0dp"
+                    android:orientation="vertical" >
+
+                    <RadioButton
+                        android:id="@+id/typeCloseTemp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="Close Vessel - Temperature"
+                        android:textColor="@color/Blue1"
+                        android:textSize="16dp" />
+
+                    <RadioButton
+                        android:id="@+id/typeClosePower"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="Close Vessel - Power Only"
+                        android:textColor="@color/Blue1"
+                        android:textSize="16dp" />
+
+                    <RadioButton
+                        android:id="@+id/typeOpen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="Open Vessel"
+                        android:textColor="@color/Blue1"
+                        android:textSize="16dp" />
+
+                    
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/textTempWindow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/systemType"
+                    android:layout_marginBottom="7dp"
+                    android:text="Safety Span"
+                    android:textSize="@dimen/textRunning" />
+
+                <TextView
+                    android:id="@+id/textVesselWindow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/textTempWindow"
+                    android:layout_marginBottom="25dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="Vessel: "
+                    android:textColor="@color/Blue1"
+                    android:textSize="@dimen/textRunning" />
+
+                <EditText
+                    android:id="@+id/valueVesselWindow"
+                    style="@style/styleHeadingSubEntry"
+                    android:layout_alignBottom="@id/textVesselWindow"
+                    android:layout_toRightOf="@id/textVesselWindow"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:text="10"
+                    android:textColor="@color/Blue1"
+                    android:textSize="@dimen/textRunning" >
+                </EditText>
+
+                <TextView
+                    android:id="@+id/textRuptureWindow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/textVesselWindow"
+                    android:layout_marginLeft="35dp"
+                    android:layout_toRightOf="@id/valueVesselWindow"
+                    android:text="Rupture: "
+                    android:textColor="@color/Blue1"
+                    android:textSize="@dimen/textRunning" />
+
+                <EditText
+                    android:id="@+id/valueRuptureWindow"
+                    style="@style/styleHeadingSubEntry"
+                    android:layout_alignBottom="@id/textVesselWindow"
+                    android:layout_toRightOf="@id/textRuptureWindow"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:text="50"
+                    android:textColor="@color/Blue1"
+                    android:textSize="@dimen/textRunning" >
+                </EditText>
+
+                <Button
+                    android:id="@+id/settings_locate_button2"
+                    style="@style/styleButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textVesselWindow"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="20dp"
+                    android:text="Asign System" />
+		
+                <Button
+                    android:id="@+id/ButtonCloseFactorySettings"
+                    style="@style/styleButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/settings_locate_button2"
+                    android:layout_centerHorizontal="true"
+                    android:padding="5dp"
+                    android:text="Close Factory Settings" />
+                
+            </RelativeLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frameCompany"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="95dp"
+            android:visibility="visible" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <EditText
+                    android:id="@+id/settings_org_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:hint="Enter Company Name"
+                    android:textColor="@color/Blue"
+                    android:textSize="@dimen/textSubHeading" />
+
+                <TextView
+                    android:id="@+id/org_name_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/settings_org_name"
+                    android:layout_marginBottom="5dp"
+                    android:text="Organisation Name"
+                    android:textSize="@dimen/textRunning" />
+
+                <Button
+                    android:id="@+id/btUpdate_org"
+                    style="@style/styleButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/org_name_setting"
+                    android:layout_marginBottom="20dp"
+                    android:text="Update" />
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/btUpdate_org"
+                    android:background="@drawable/border"
+                    android:padding="0dp" >
+
+                    <Spinner
+                        android:id="@+id/settings_chemist_spinner"
+                        android:layout_width="200dp"
+                        android:layout_height="35dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/LinearLayout2"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginRight="5dp"
+                    android:text="List of Chemists"
+                    android:textSize="@dimen/textRunning" />
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/textView2"
+                    android:layout_marginBottom="20dp" >
+
+                    <Button
+                        android:id="@+id/settings_add_chemist_button"
+                        style="@style/styleButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Add " />
+
+                    <Button
+                        android:id="@+id/settings_chemist_remove_button"
+                        style="@style/styleButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="Remove" />
+                </LinearLayout>
+<Button
+                    android:id="@+id/settings_locate_button"
+                    style="@style/styleButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/LinearLayout3"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="20dp"
+                    android:text="Asign System" />
+                
+                <Button
+                    android:id="@+id/factory_settings"
+                    style="@style/styleButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/settings_locate_button"
+                    android:layout_centerHorizontal="true"
+                    android:text="Factory Settings"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+        </FrameLayout>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" >
+
+            <TextView
+                android:id="@+id/vesselVolume"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:text="--"
+                android:textColor="@color/Blue"
+                android:textSize="@dimen/textTitle" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="8dp"
+                android:text="(ml)"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/Blue"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/ves_vol_button"
+                style="@style/styleButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:text="Set Vessel volume" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" >
+
+            <TextView
+                android:id="@+id/temp_limit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:text="--"
+                android:textColor="@color/Blue"
+                android:textSize="@dimen/textTitle" />
+
+            <TextView
+                android:id="@+id/degree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="8dp"
+                android:text="@string/degreeC"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/Blue"
+                android:textSize="@dimen/textTitle" />
+
+            <Button
+                android:id="@+id/temp_limit_button"
+                style="@style/styleButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:text="Set Temp. Limit" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/EditText01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Enter Company Name"
+            android:textColor="@color/Blue"
+            android:textSize="@dimen/textSubHeading" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/vesselNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:text="--"
+            android:textColor="@color/Blue"
+            android:textSize="@dimen/textTitle" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="8dp"
+            android:text="    "
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/Blue"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/ves_no_button"
+            style="@style/styleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:text="Set Number of Vessel" />
+
+        <Spinner
+            android:id="@+id/settings_alias_spinner"
+            android:layout_width="184dp"
+            android:layout_height="@dimen/spinnerHeight"
+            android:layout_marginLeft="20dp" />
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="List of Paired Blocks"
+            android:textSize="@dimen/textRunning" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/settings_add_alias_button"
+                style="@style/styleButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Name Block" />
+
+            <Button
+                android:id="@+id/settings_alias_remove_button"
+                style="@style/styleButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:text="Remove Block" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="3dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:background="@color/Blue" >
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:padding="15dp" >
+
+         <TextView
+             android:id="@+id/TextSystem1"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentLeft="true"
+             android:layout_marginBottom="15dp"
+             android:text="System Configuration"
+             android:textSize="@dimen/textSubHeading" />
+        
+         <TextView
+             android:id="@+id/TextSensor"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentLeft="true"
+             android:layout_below="@id/TextSystem1"
+             android:text="Sensors"
+             android:textSize="@dimen/textRunning" />
+  
+         
+          <CheckBox
+            android:id="@+id/checkInsitu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TextSensor"
+            android:layout_alignLeft="@id/TextSensor" 
+            android:layout_marginTop="0dp"
+            android:textColor="@color/Blue1"
+            android:text="Insitu Temp." />
+          
+           <CheckBox
+            android:id="@+id/cb_settings_Pressure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/checkInsitu"
+            android:layout_alignBottom="@id/checkInsitu"  
+            android:layout_marginLeft="40dp"
+            android:textColor="@color/Blue1"
+            android:text="Pressure" />
+           
+            <TextView
+                android:id="@+id/TextVesselType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/TextSensor"
+                android:layout_below="@id/TextSensor"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="50dp"
+                android:text="Vessel Type"
+                android:textSize="@dimen/textRunning" />
+
+            
+               <RadioGroup
+                    android:id="@+id/radioVesselType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/TextVesselType"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="0dp"
+                    android:orientation="horizontal" >
+            
+                       <RadioButton
+                        android:id="@+id/radioVHP"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="eVHP"
+                        android:textColor="@color/Blue1"
+                        android:layout_marginLeft="5dp"
+                        android:textSize="16dp" />
+
+                    <RadioButton
+                        android:id="@+id/radioLVHP"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="LVHP"
+                        android:textColor="@color/Blue1"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="16dp" />
+
+     
+                </RadioGroup>
+            
+               
+            <TextView
+                android:id="@+id/TextPurge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/TextSensor"
+                android:layout_below="@id/radioVesselType"
+                android:layout_marginBottom="7dp"
+                android:layout_marginLeft="5dp" 
+                android:text="Cavity Purge"
+                android:textSize="@dimen/textRunning" />
+               
+              <TextView
+                    android:id="@+id/textPurge1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/TextPurge"
+                    android:layout_marginBottom="25dp"
+                    android:layout_marginLeft="15dp"
+                    android:text="Start Temp.: "
+                    android:textColor="@color/Blue1"
+                    android:textSize="@dimen/textRunning" />
+
+                <EditText
+                    android:id="@+id/valuePurgeTemp"
+                    style="@style/styleHeadingSubEntry"
+                    android:layout_alignBottom="@id/textPurge1"
+                    android:layout_toRightOf="@id/textPurge1"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:text="75"
+                    android:textColor="@color/Blue1"
+                    android:textSize="@dimen/textRunning" />
+                    
+                    <TextView 
+                    style="@style/styleHeadingSubEntry"
+                    android:layout_alignBottom="@id/textPurge1"
+                    android:layout_toRightOf="@id/valuePurgeTemp" 
+                    android:text="@string/degreeC"
+                    android:textColor="@color/Blue1"
+                    android:textSize="@dimen/textRunning" />
+            
+                    <TextView
+                    android:id="@+id/textPurge2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/valuePurgeTemp"
+                    android:layout_marginLeft="55dp"
+                    android:layout_toRightOf="@id/valuePurgeTemp"
+                    android:text="Cycle: "
+                    android:textColor="@color/Blue1"
+                    android:textSize="@dimen/textRunning" />
+                    
+                    <EditText
+                    android:id="@+id/valuePurgeCycle"
+                    style="@style/styleHeadingSubEntry"
+                    android:layout_alignBottom="@id/textPurge2"
+                    android:layout_toRightOf="@id/textPurge2"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:text="5"
+                    android:textColor="@color/Blue1"
+                    android:textSize="@dimen/textRunning" />
+                    
+                    <TextView 
+                    android:id="@+id/textSec"
+                    style="@style/styleHeadingSubEntry"
+                    android:layout_alignBottom="@id/textPurge1"
+                    android:layout_toRightOf="@id/valuePurgeCycle" 
+                    android:text="sec"
+                    android:textColor="@color/Blue1"
+                    android:textSize="@dimen/textRunning" />
+                    
+                    
+                    <TextView
+                android:id="@+id/TextSafetySpan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/TextSensor"
+                android:layout_marginTop="250dp"
+                android:layout_marginBottom="7dp"
+                android:layout_marginLeft="5dp" 
+                android:text="Safety Span"
+                android:textSize="@dimen/textRunning" />
+                    
+                    
+                    <EditText
+                    android:id="@+id/valueDeltaT"
+                    style="@style/styleHeadingSubEntry"
+                    android:layout_alignBottom="@id/TextSafetySpan"
+                    android:layout_toRightOf="@id/TextSafetySpan"
+                    android:layout_marginLeft="5dp" 
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:text="50"
+                    android:textColor="@color/Blue1"
+                    android:textSize="@dimen/textRunning" />
+            
+                    <TextView 
+                    style="@style/styleHeadingSubEntry"
+                    android:layout_alignBottom="@id/valueDeltaT"
+                    android:layout_toRightOf="@id/valueDeltaT" 
+                    android:text="@string/degreeC"
+                    android:textColor="@color/Blue1"
+                    android:textSize="@dimen/textRunning" />
+            <CheckBox
+            android:id="@+id/checkOPSense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textPurge1"
+            android:layout_alignLeft="@id/TextSensor"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="50dp"
+            android:textColor="@color/Blue1"
+            android:text="OPSense Activation" />
+                    
+        <Button
+            android:id="@+id/settings_back_button"
+            style="@style/styleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:layout_below="@id/checkOPSense"
+            android:layout_centerHorizontal="true" 
+            android:text="   Close   " />
+
+      
+
+    </RelativeLayout>
+
+</LinearLayout>

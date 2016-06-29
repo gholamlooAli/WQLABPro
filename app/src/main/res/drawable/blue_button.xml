@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+   
+    
+    <item android:state_pressed="true" >
+ 	<layer-list>   
+        
+    	<item android:left="0dp" android:top="0dp">
+        	<shape>
+              <corners android:radius="0dp" />
+               <gradient
+                android:startColor="@color/Blue1"
+                android:endColor="@color/Blue_1"
+                android:angle="270" />
+  			</shape>
+  		</item>
+        
+    	<item android:bottom="1dp" android:right="1dp" android:left="1dp" android:top="1dp">
+        	<shape>
+            	<gradient
+                	android:startColor="@color/Blue5"
+                	android:endColor="@color/Blue4"
+                	android:angle="270" />
+            	<stroke
+                	android:width="0dp"
+                	android:color="@color/White" />
+            	<corners android:radius="20dp" />
+            	<padding
+                	android:left="10dp"
+                	android:top="10dp"
+                	android:right="10dp"
+                	android:bottom="10dp" />
+        	</shape>
+     	</item>   
+     </layer-list>
+    </item>
+   
+    
+  	<item android:state_enabled="false" >
+ 	<layer-list>   
+        
+    	<item android:left="0dp" android:top="0dp">
+        	<shape>
+              <corners android:radius="4dp" />
+               <gradient
+                android:startColor="@color/Blue1"
+                android:endColor="@color/Blue_1"
+                android:angle="270" />
+  			</shape>
+  		</item>
+        
+    	<item android:bottom="1.5dp" android:right="1.5dp" android:left="1.5dp" android:top="1.5dp">
+        	<shape>
+            	<gradient
+                	android:startColor="@color/Gray10"
+                	android:endColor="@color/Gray20"
+                	android:angle="270" />
+            	<stroke
+                	android:width="0dp"
+                	android:color="@color/White" />
+            	<corners android:radius="4dp" />
+            	<padding
+                	android:left="0dp"
+                	android:top="0dp"
+                	android:right="0dp"
+                	android:bottom="0dp" />
+        	</shape>
+     	</item>   
+     </layer-list>
+     </item>     
+        
+    
+    
+    <item><layer-list>   
+        
+    	<item android:left="0dp" android:top="0dp">
+        	<shape>
+              <corners android:radius="4dp" />
+               <gradient
+                android:startColor="@color/Blue1"
+                android:endColor="@color/Blue_1"
+                android:angle="270" />
+  			</shape>
+  		</item>
+        
+    	<item android:bottom="1.5dp" android:right="1.5dp" android:left="1.5dp" android:top="1.5dp">
+        	<shape>
+            	<gradient
+                	android:startColor="@color/Blue5"
+                	android:endColor="@color/Blue3"
+                	android:angle="270" />
+            	<stroke
+                	android:width="0dp"
+                	android:color="@color/White" />
+            	<corners android:radius="4dp" />
+            	<padding
+                	android:left="0dp"
+                	android:top="0dp"
+                	android:right="0dp"
+                	android:bottom="0dp" />
+        	</shape>
+     	</item>   
+     </layer-list></item>     
+        
+  
+</selector>

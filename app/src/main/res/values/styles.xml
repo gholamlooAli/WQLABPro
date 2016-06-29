@@ -1,0 +1,154 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    
+    <style name="AppBaseTheme" parent="android:Theme.Holo.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+          --> 
+          
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        
+        <item name="android:textColor">@color/Blue_1</item> 
+   		<item name="android:textAllCaps">false</item>
+   		<item name="android:actionBarTabTextStyle">@style/MyActionBar</item>
+	</style>
+	
+	<style name="styleTextTemp" >
+		<item name="android:textColor">@color/Blue1</item>
+		<item name="android:typeface">serif</item>
+		<item name="android:gravity">fill</item>
+		<item name="android:shadowColor">@color/Gray40</item>
+        <item name="android:shadowDx">2</item>
+        <item name="android:shadowDy">2</item>
+        <item name="android:shadowRadius">10</item>
+	</style>
+    
+
+    
+	<style name="styleHeadingSuperText" >
+	     <item name="android:layout_height" >wrap_content</item>
+	    <item name="android:layout_width" >wrap_content</item>
+		<item name="android:textColor">@color/Red1</item>
+		<item name="android:textSize">@dimen/superHeading</item>
+		<item name="android:gravity">fill</item>
+	</style>
+	
+	<style name="styleHeadingText" >
+		<item name="android:layout_height" >wrap_content</item>
+	    <item name="android:layout_width" >wrap_content</item>
+		<item name="android:textColor">@color/Blue1</item>
+		<item name="android:textSize">@dimen/textHeading</item>
+		<item name="android:gravity">fill</item>
+	</style>
+
+	<style name="styleHeadingSub" >
+		<item name="android:layout_height">wrap_content</item>
+	    <item name="android:layout_width">wrap_content</item>
+		<item name="android:textColor">@color/Blue_1</item>
+		<item name="android:textSize">@dimen/textSubHeading</item>
+		<item name="android:gravity">fill</item>
+	</style>
+	<style name="styleHeadingSubEntry" >
+	    <item name="android:layout_width">wrap_content</item>
+	    <item name="android:layout_height">wrap_content</item>
+		<item name="android:textColor">@color/Blue3</item>
+		<item name="android:textSize">@dimen/textSubHeading</item>
+		<item name="android:textStyle">bold|italic</item>
+		<item name="android:gravity">center</item>
+		<item name="android:textColorHint">@color/TextHint</item>
+	</style>
+	<style name="styleHeadingSub1" > 
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:layout_width">wrap_content</item>
+		<item name="android:textColor">@color/Blue_1</item>
+		<item name="android:textSize">18dp</item>
+		<item name="android:gravity">fill</item>
+	</style>
+	<style name="styleHeadingSubReverse" >
+		<item name="android:layout_height">wrap_content</item>
+	    <item name="android:layout_width">wrap_content</item>
+		<item name="android:textColor">@color/Blue7</item>
+		<item name="android:textSize">18dp</item>
+		<item name="android:gravity">fill</item>
+	</style>	
+	<style name="styleRunningText" >
+		<item name="android:layout_height" >wrap_content</item>
+	    <item name="android:layout_width" >wrap_content</item>
+		<item name="android:textColor">@color/Blue2</item>
+		<item name="android:textSize">@dimen/textRunning</item>
+		<item name="android:gravity">fill</item>
+	</style>	
+	
+	<style name="styleHeaderRunningText" >
+		<item name="android:layout_height" >wrap_content</item>
+	    <item name="android:layout_width" >wrap_content</item>
+		<item name="android:textColor">@color/Blue1</item>
+		<item name="android:textSize">@dimen/textRunning</item>
+		<item name="android:gravity">fill</item>
+	</style>	
+	
+	<style name="styleRunningTextSmall" >
+		<item name="android:layout_height" >wrap_content</item>
+	    <item name="android:layout_width" >wrap_content</item>
+		<item name="android:textColor">@color/Blue2</item>
+		<item name="android:textSize">@dimen/textRunning</item>
+		<item name="android:gravity">fill</item>
+	</style>	
+	
+	<style name="styleRecipeValue" >
+		<item name="android:layout_height" >wrap_content</item>
+	    <item name="android:layout_width" >wrap_content</item>
+		<item name="android:textColor">@color/Blue_1</item>
+		<item name="android:textSize">@dimen/textSubHeading</item>
+		<item name="android:gravity">fill</item>
+	</style>
+	
+	<style name="styleTableText" >
+		<item name="android:layout_height" >wrap_content</item>
+	    <item name="android:layout_width" >wrap_content</item>
+		<item name="android:textColor">@color/Blue1</item>
+		<item name="android:textSize">16dp</item>
+		<item name="android:gravity">center</item>
+	</style>
+		
+	<style name="styleButton" >
+	    <item name="android:layout_height" >wrap_content</item>
+	    <item name="android:layout_width" >wrap_content</item>
+	    <item name="android:textColor" >@color/Blue8</item>
+	    <item name="android:gravity" >center_vertical|center_horizontal</item>
+	    <item name="android:textSize" >17sp</item>
+	    <item name="android:textStyle" ></item>
+	    <item name="android:shadowColor" >@color/Black</item>
+	    <item name="android:shadowDx" >0</item>
+	    <item name="android:shadowDy" >0</item>
+	    <item name="android:shadowRadius" >0</item>
+	    <item name="android:background">@drawable/blue_button</item>
+	    <item name="android:minHeight">10dp</item>
+	    <item name="android:minWidth">15dp</item>
+	    <item name="android:padding">6dp</item>
+  	</style>
+  	
+	<style name="styleButtonRed" >
+	    <item name="android:layout_height" >wrap_content</item>
+	    <item name="android:layout_width" >wrap_content</item>
+	    <item name="android:textColor" >@color/Gray5</item>
+	    <item name="android:gravity" >center_vertical|center_horizontal</item>
+	    <item name="android:textSize" >17sp</item>
+	    <item name="android:textStyle" ></item>
+	    <item name="android:background">@drawable/red_button</item>
+	    <item name="android:minHeight">10dip</item>
+	    <item name="android:minWidth">15dip</item>
+	    <item name="android:padding">6dp</item>
+  	</style>
+  	
+</resources>
