@@ -51,7 +51,7 @@ import android.widget.Toast;
 
 public class SettingsActivity extends Activity{
 	
-	private final String swVersion="Version 1.0.7  Release Jun 26 , 2016";
+	private final String swVersion="Version 1.0.7  Release Jun-- 26 , 2016";
 	
 	private Spinner chemist_spinner ;//= (Spinner) findViewById(R.id.settings_chemist_spinner);
 	private Spinner alias_spinner ;
